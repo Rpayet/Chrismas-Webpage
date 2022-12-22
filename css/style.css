@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap");
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet"> ');
 * {
   margin: 0;
   padding: 0;
@@ -17,22 +17,31 @@
 }
 
 #headerBar {
+  width: 60vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
-  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8745098039);
+  backdrop-filter: blur(0.3em);
 }
 #headerBar .logoCt {
   display: flex;
   width: 15em;
   align-items: center;
 }
-#headerBar .logoCt #xmasLogo {
+#headerBar .logoCt p {
+  font-weight: 600;
+}
+#headerBar .logoCt .xmasLogo {
   width: 2em;
   height: 2em;
 }
 #headerBar .navBar {
   display: flex;
+  align-items: center;
 }
 #headerBar .navBar li {
   margin-left: 2.5em;
@@ -42,7 +51,7 @@
 #main {
   position: relative;
   width: 100%;
-  margin-top: 4em;
+  margin-top: 5em;
 }
 #main #landing1 {
   display: flex;
@@ -104,7 +113,7 @@
 #celebration {
   position: relative;
   width: 100%;
-  margin-top: 4em;
+  margin-top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +152,7 @@
 #gift {
   position: relative;
   width: 100%;
-  margin-top: 4em;
+  margin-top: 5em;
 }
 #gift h2 {
   text-align: center;
@@ -177,7 +186,7 @@
 #new {
   position: relative;
   width: 100%;
-  margin-top: 4em;
+  margin-top: 5em;
   margin-top: 5rem;
   text-align: center;
 }
@@ -250,13 +259,14 @@
 #sending {
   position: relative;
   width: 100%;
-  margin-top: 4em;
+  margin-top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #dc3845;
   border-radius: 2em;
   padding: 2em 0;
+  margin-top: 10em;
 }
 #sending .sendingMsg {
   width: 35%;
@@ -292,6 +302,74 @@
   width: 100%;
   transform: rotateZ(15deg);
   padding: 3em;
+}
+
+#footCt {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+}
+#footCt .footBg .fBg1 {
+  width: 10%;
+  height: 50%;
+  position: absolute;
+  bottom: 1.5em;
+  left: 0;
+  background-image: url(../img/footer1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#footCt .footBg .fBg2 {
+  width: 10%;
+  height: 50%;
+  position: absolute;
+  bottom: 5em;
+  right: -6em;
+  background-image: url(../img/footer2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#footCt .footCardCt {
+  width: 100%;
+  margin-top: 10em;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  justify-content: space-between;
+}
+#footCt .footCardCt p, #footCt .footCardCt a {
+  color: #615959;
+}
+#footCt .footCardCt .footCard .logoCt {
+  display: flex;
+  width: 15em;
+  align-items: center;
+}
+#footCt .footCardCt .footCard .logoCt .xmasLogo {
+  width: 1.5em;
+  height: 1.5em;
+}
+#footCt .footCardCt .footCard p {
+  margin-top: 0.8em;
+  font-size: 0.9em;
+}
+#footCt .footCardCt .footCard ul {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footCt .footCardCt .footCard ul li {
+  margin-top: 0.5em;
+}
+#footCt .rights {
+  width: 100%;
+  text-align: center;
+  margin-top: 5em;
+}
+#footCt .rights p {
+  color: #615959;
 }
 
 /*# sourceMappingURL=style.css.map */
