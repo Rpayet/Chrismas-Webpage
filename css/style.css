@@ -43,7 +43,7 @@
   position: relative;
   width: 100%;
   height: 50em;
-  margin-top: 10em;
+  margin-top: 5em;
 }
 #main #landing1 {
   display: flex;
@@ -58,21 +58,21 @@
 #main #landing1 .xmasTreeImg img {
   width: 100%;
 }
-#main .landingMsg {
+#main #landing1 .landingMsg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 35%;
   margin-left: 2rem;
 }
-#main .landingMsg h1 {
+#main #landing1 .landingMsg h1 {
   font-size: 2rem;
 }
-#main .landingMsg p {
+#main #landing1 .landingMsg p {
   font-size: 0.9rem;
   margin-top: 1em;
 }
-#main .landingMsg .homeButton {
+#main #landing1 .landingMsg .homeButton {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -82,8 +82,24 @@
   padding: 1rem 2rem;
   background-color: #dc3845;
 }
-#main .landingMsg .homeButton a {
+#main #landing1 .landingMsg .homeButton a {
   color: white;
+}
+#main #landing2 {
+  text-align: center;
+  margin-top: 5em;
+}
+#main #landing2 .cardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#main #landing2 .cardContainer .givinCard {
+  width: 20%;
+}
+#main #landing2 .cardContainer .givinCard img {
+  width: 80%;
+  padding: 2em 2em 0 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

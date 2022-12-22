@@ -52,7 +52,7 @@
     position: relative;
     width: 100%;
     height: 50em;
-    margin-top: 10em;
+    margin-top: 5em;
     
     #landing1 {
         display: flex;
@@ -69,27 +69,48 @@
                 width: 100%;
             }
         }
+
+        .landingMsg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 35%;
+            margin-left: 2rem;
+            h1{
+                font-size: 2rem;
+            }
+            p {
+                font-size: .9rem;
+                margin-top: 1em;
+            }
+            .homeButton {
+                @include button;
+                background-color: $xmasRed;
+    
+                a {
+                    color: white;
+                }
+            }
+        }
     }
 
-    .landingMsg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 35%;
-        margin-left: 2rem;
-        h1{
-            font-size: 2rem;
-        }
-        p {
-            font-size: .9rem;
-            margin-top: 1em;
-        }
-        .homeButton {
-            @include button;
-            background-color: $xmasRed;
+    
 
-            a {
-                color: white;
+    #landing2 {
+        text-align: center;
+        margin-top: 5em;
+        .cardContainer {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+    
+            .givinCard {
+                width: 20%;
+                
+                img {
+                    width: 80%;
+                    padding: 2em 2em 0 2em;
+                }
             }
         }
     }
