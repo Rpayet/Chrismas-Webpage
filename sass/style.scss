@@ -49,10 +49,7 @@
 // SECTION HOME
 
 #main {
-    position: relative;
-    width: 100%;
-    height: 50em;
-    margin-top: 5em;
+    @include sectionType1;
     
     #landing1 {
         display: flex;
@@ -63,7 +60,6 @@
 
         .xmasTreeImg{
             width: 45%;
-            // margin: 0 auto;
 
             img{
                 width: 100%;
@@ -116,7 +112,43 @@
     }
 }
 
+// SECTION CELEBRATION
 
+#celebration {
+    @include sectionType1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .celebrateMsg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        margin-left: 2rem;
+    
+        p {
+            font-size: .9rem;
+            margin-top: 1em;
+        }
+        .homeButton {
+            @include button;
+            background-color: $xmasRed;
+
+            a {
+                color: white;
+            }
+        }
+
+    }
+    .celebrateImg {
+        width: 45%;
+
+            img{
+                width: 100%;
+            }
+    }
+}
 
 
 

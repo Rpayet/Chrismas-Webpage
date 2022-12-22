@@ -18,3 +18,9 @@
     margin-top: 2em;
     padding: 1rem 2rem;
 }
+
+@mixin sectionType1 {
+    position: relative;
+    width: 100%;
+    margin-top: 3em;    
+}
