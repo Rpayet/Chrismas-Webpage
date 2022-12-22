@@ -179,7 +179,6 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 18em;
   padding: 2em 1em;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
@@ -353,7 +352,7 @@
 }
 #footCt .footCardCt {
   width: 100%;
-  margin-top: 10em;
+  margin-top: 8em;
   display: grid;
   grid-template-columns: 15% 15% 15% 15%;
   justify-content: space-between;
