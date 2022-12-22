@@ -158,7 +158,6 @@
 #gift .cardCt .itemCard {
   position: relative;
   width: 100%;
-  height: 18em;
   padding: 2em 1em;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
@@ -173,6 +172,79 @@
 #gift .cardCt .itemCard img {
   width: 100%;
   padding: 0.5rem 2em;
+}
+
+#new {
+  position: relative;
+  width: 100%;
+  margin-top: 4em;
+  margin-top: 5rem;
+  text-align: center;
+}
+#new .newItemCt {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5rem;
+  overflow-x: auto;
+}
+#new .newItemCt .itemCard {
+  position: relative;
+  width: 25%;
+  padding: 0.5rem 0.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
+}
+#new .newItemCt .itemCard i {
+  padding: 0.2em;
+  color: white;
+  position: absolute;
+  font-size: 1.5rem;
+  border-radius: 15%;
+  bottom: 0;
+  right: 0;
+  background-color: #dc3845;
+}
+#new .newItemCt .itemCard img {
+  width: 100%;
+  padding: 0.5rem 3rem 1rem;
+}
+#new .newItemCt .itemCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  border-radius: 1rem 1rem 50% 50%;
+  background-color: #dc3845;
+  z-index: -1;
+}
+#new .dotCt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 2em;
+  height: 0.5em;
+  margin: 1em auto 0;
+}
+#new .dotCt .dotOn {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #dc3845;
+  border-radius: 50%;
+}
+#new .dotCt .dotOff1 {
+  width: 0.45em;
+  height: 0.45em;
+  background-color: #e1dfe0;
+  border-radius: 50%;
+}
+#new .dotCt .dotOff1 {
+  width: 0.35em;
+  height: 0.35em;
+  background-color: #e1dfe0;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

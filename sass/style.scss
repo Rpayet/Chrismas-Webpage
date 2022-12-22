@@ -170,7 +170,6 @@
         .itemCard {
             position: relative;
             width: 100%;
-            height: 18em;
             padding: 2em 1em;
             border-radius: 1rem;
             box-shadow: 2px 2px 15px #00000025;
@@ -188,6 +187,95 @@
                 padding: .5rem 2em;
             }
     
+        }
+    }
+}
+
+
+// SECTION NEW
+
+#new{
+
+    @include sectionType1;
+
+    margin-top: 5rem;
+    text-align: center;
+
+
+    .newItemCt {
+
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 5rem;
+        overflow-x: auto;
+
+
+        .itemCard {
+            position: relative;
+            width: 25%;
+            padding: .5rem .5rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 15px #00000025;
+            
+            i{
+                padding: .2em;
+                color: white;
+                position: absolute;
+                font-size: 1.5rem;
+                border-radius: 15%;
+                bottom: 0;
+                right: 0;
+                background-color: $xmasRed;
+            }
+            
+            img {
+                width: 100%;
+                padding: .5rem 3rem 1rem;
+            }
+    
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 60%;
+                border-radius: 1rem 1rem 50% 50%;
+                background-color: $xmasRed;
+                z-index: -1;
+            }
+    
+        }
+    }
+
+    .dotCt {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 2em;
+        height: .5em;
+        margin: 1em auto 0;
+
+        .dotOn {
+            width: .5em;
+            height: .5em;
+            background-color: $xmasRed;
+            border-radius: 50%;
+        }
+
+        .dotOff1 {
+            width: .45em;
+            height: .45em;
+            background-color: #e1dfe0;
+            border-radius: 50%;
+        }
+
+        .dotOff1 {
+            width: .35em;
+            height: .35em;
+            background-color: #e1dfe0;
+            border-radius: 50%;
         }
     }
 }
