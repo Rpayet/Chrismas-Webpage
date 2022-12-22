@@ -1,23 +1,28 @@
-// Reset
-
+// RESET
 @import 'variables';
 @import 'mixins';
 
 * {
     @include reset;
     font-family: $poppins;
+    color: $title;
 }
 
+
+// CONTAINER GLOBAL
 #container {
+    position: relative;
     width: 60vw;
     margin: auto;
 }
 
-#headerBar {
 
+// HEADER logo + navbar
+#headerBar {
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
+    top: 0;
 
     .logoCt {
         display: flex;
@@ -36,6 +41,56 @@
 
         li {
             margin-left: 2.5em;
+            display: inline-block;
+        }
+    }
+}
+
+// SECTION HOME
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 50em;
+    margin-top: 10em;
+    
+    #landing1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+
+        .xmasTreeImg{
+            width: 45%;
+            // margin: 0 auto;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .landingMsg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        margin-left: 2rem;
+        h1{
+            font-size: 2rem;
+        }
+        p {
+            font-size: .9rem;
+            margin-top: 1em;
+        }
+        .homeButton {
+            @include button;
+            background-color: $xmasRed;
+
+            a {
+                color: white;
+            }
         }
     }
 }

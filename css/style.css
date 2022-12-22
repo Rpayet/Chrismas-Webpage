@@ -7,9 +7,11 @@
   letter-spacing: 1px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  color: #282525;
 }
 
 #container {
+  position: relative;
   width: 60vw;
   margin: auto;
 }
@@ -18,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
+  top: 0;
 }
 #headerBar .logoCt {
   display: flex;
@@ -33,6 +36,54 @@
 }
 #headerBar .navBar li {
   margin-left: 2.5em;
+  display: inline-block;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 50em;
+  margin-top: 10em;
+}
+#main #landing1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+#main #landing1 .xmasTreeImg {
+  width: 45%;
+}
+#main #landing1 .xmasTreeImg img {
+  width: 100%;
+}
+#main .landingMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  margin-left: 2rem;
+}
+#main .landingMsg h1 {
+  font-size: 2rem;
+}
+#main .landingMsg p {
+  font-size: 0.9rem;
+  margin-top: 1em;
+}
+#main .landingMsg .homeButton {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  margin-top: 2em;
+  padding: 1rem 2rem;
+  background-color: #dc3845;
+}
+#main .landingMsg .homeButton a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,3 +7,14 @@
     letter-spacing: 1px;
     text-decoration: none;
 }
+
+@mixin button
+{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-top: 2em;
+    padding: 1rem 2rem;
+}
