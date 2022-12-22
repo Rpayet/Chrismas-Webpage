@@ -101,13 +101,22 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-top: 2em;
 }
 #main #landing2 .cardContainer .givinCard {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #main #landing2 .cardContainer .givinCard img {
-  width: 80%;
-  padding: 2em 2em 0 2em;
+  width: 8.3333333333vw;
+  margin: auto;
+}
+#main #landing2 .cardContainer .givinCard p {
+  width: 100%;
+  margin-top: 0.8em;
+  font-size: 0.8em;
 }
 
 #celebration {
@@ -165,8 +174,12 @@
   margin-top: 5rem;
 }
 #gift .cardCt .itemCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 100%;
+  height: 18em;
   padding: 2em 1em;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
@@ -179,8 +192,14 @@
   right: 1rem;
 }
 #gift .cardCt .itemCard img {
-  width: 100%;
-  padding: 0.5rem 2em;
+  width: 6.25vw;
+  margin: auto;
+}
+#gift .cardCt .itemCard h3 {
+  margin-top: 1em;
+}
+#gift .cardCt .itemCard p {
+  margin-top: 0.35em;
 }
 
 #new {
@@ -200,7 +219,7 @@
 #new .newItemCt .itemCard {
   position: relative;
   width: 25%;
-  padding: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem 0.5rem 3rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
 }
@@ -215,8 +234,7 @@
   background-color: #dc3845;
 }
 #new .newItemCt .itemCard img {
-  width: 100%;
-  padding: 0.5rem 3rem 1rem;
+  width: 12.5vw;
 }
 #new .newItemCt .itemCard:before {
   content: "";
@@ -270,15 +288,17 @@
 }
 #sending .sendingMsg {
   width: 35%;
+  padding: 1em;
 }
 #sending .sendingMsg h2 {
   font-size: 2.5em;
   color: white;
 }
 #sending .sendingMsg input {
+  width: 100%;
   border-radius: 2em;
-  padding: 1em 2em;
   margin-top: 1.5em;
+  padding: 1em;
 }
 #sending .sendingMsg .sendingButton {
   width: fit-content;
@@ -296,7 +316,7 @@
   font-weight: bold;
 }
 #sending .celebrateImg {
-  width: 35%;
+  width: 45%;
 }
 #sending .celebrateImg img {
   width: 100%;
