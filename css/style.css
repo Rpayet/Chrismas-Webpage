@@ -1,6 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap");
 * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
+}
+
+#container {
+  width: 60vw;
+  margin: auto;
+}
+
+#headerBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+#headerBar .logoCt {
+  display: flex;
+  width: 15em;
+  align-items: center;
+}
+#headerBar .logoCt #xmasLogo {
+  width: 2em;
+  height: 2em;
+}
+#headerBar .navBar {
+  display: flex;
+}
+#headerBar .navBar li {
+  margin-left: 2.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,40 @@
 @import 'mixins';
 
 * {
+    @include reset;
     font-family: $poppins;
+}
+
+#container {
+    width: 60vw;
+    margin: auto;
+}
+
+#headerBar {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+
+    .logoCt {
+        display: flex;
+        width: 15em;
+        align-items: center;
+
+        #xmasLogo {
+            width: 2em;
+            height: 2em;
+        }
+        
+    }
+
+    .navBar {
+        display: flex;
+
+        li {
+            margin-left: 2.5em;
+        }
+    }
 }
 
 
