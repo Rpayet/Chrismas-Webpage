@@ -16,13 +16,6 @@
   margin: auto;
 }
 
-@media (max-width: 768px) {
-  #container {
-    width: 100vw;
-    padding: 0 0.5em;
-    overflow: hidden;
-  }
-}
 #headerBar {
   width: 60vw;
   height: 8vh;
@@ -65,39 +58,6 @@
   margin-left: 2.5em;
 }
 
-@media (max-width: 768px) {
-  #headerBar {
-    width: 100vw;
-    left: 0;
-    padding: 0 1em;
-  }
-  #headerBar .menuNavBar {
-    display: flex;
-    align-items: center;
-  }
-  #headerBar .menuNavBar .navBar {
-    width: 100%;
-    position: absolute;
-    top: -33vh;
-    left: 0;
-    flex-direction: column;
-    background-color: white;
-  }
-  #headerBar .menuNavBar .navBar li {
-    text-align: center;
-    padding: 1em;
-    width: 90%;
-    margin-left: 0;
-    margin-top: 1em;
-    border-bottom: 1px solid black;
-  }
-  #headerBar .menuNavBar .burgerDisplay {
-    display: block;
-  }
-  #headerBar .menuNavBar i {
-    margin-left: 1.5em;
-  }
-}
 #main {
   position: relative;
   width: 100%;
@@ -175,46 +135,6 @@
   font-size: 0.8em;
 }
 
-@media (max-width: 768px) {
-  #main #landing1 {
-    flex-direction: column;
-  }
-  #main #landing1 .xmasTreeImg {
-    width: 70%;
-  }
-  #main #landing1 .landingMsg {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin-left: 0;
-  }
-  #main #landing1 .landingMsg h1 {
-    width: 50%;
-    font-size: 1.5rem;
-  }
-  #main #landing1 .landingMsg p {
-    width: 80%;
-    font-size: 0.7rem;
-  }
-  #main #landing2 h2 {
-    width: 60%;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  #main #landing2 .cardContainer {
-    grid-template-columns: 40% 40%;
-  }
-  #main #landing2 .cardContainer .givinCard img {
-    width: 50%;
-  }
-  #main #landing2 .cardContainer .givinCard h3 {
-    font-size: 0.75rem;
-    font-weight: 800;
-  }
-  #main #landing2 .cardContainer .givinCard p {
-    font-size: 0.6rem;
-  }
-}
 #celebration {
   position: relative;
   width: 100%;
@@ -255,32 +175,6 @@
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  #celebration {
-    flex-direction: column;
-    width: 95%;
-  }
-  #celebration h2 {
-    font-size: 1rem;
-    text-align: center;
-  }
-  #celebration .celebrateMsg {
-    text-align: center;
-    margin-left: 0;
-    width: 100%;
-    align-items: center;
-  }
-  #celebration .celebrateMsg p {
-    font-size: 0.7rem;
-  }
-  #celebration .celebrateMsg .homeButton a {
-    font-size: 0.7rem;
-    font-weight: 800;
-  }
-  #celebration .celebrateImg {
-    width: 55%;
-  }
-}
 #gift {
   position: relative;
   width: 100%;
@@ -324,28 +218,6 @@
   margin-top: 0.35em;
 }
 
-@media (max-width: 768px) {
-  #gift h2 {
-    font-size: 1rem;
-  }
-  #gift .cardCt {
-    grid-template-columns: 40% 40%;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  #gift .cardCt .itemCard i {
-    font-size: 1rem;
-  }
-  #gift .cardCt .itemCard img {
-    width: 60%;
-  }
-  #gift .cardCt .itemCard h3 {
-    font-size: 0.9rem;
-  }
-  #gift .cardCt .itemCard p {
-    font-size: 0.7rem;
-  }
-}
 #new {
   position: relative;
   width: 100%;
@@ -419,23 +291,6 @@
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  #new h2 {
-    font-size: 1rem;
-  }
-  #new .newItemCt {
-    margin-top: 2rem;
-    padding: 0 4em;
-    overflow: scroll;
-  }
-  #new .newItemCt .itemCard {
-    width: 100%;
-    margin: 0 0.8em;
-  }
-  #new .newItemCt .itemCard img {
-    width: 50vw;
-  }
-}
 #sending {
   position: relative;
   width: 100%;
@@ -486,29 +341,6 @@
   padding: 3em;
 }
 
-@media (max-width: 768px) {
-  #sending {
-    flex-direction: column;
-    text-align: center;
-  }
-  #sending .sendingMsg {
-    width: 100%;
-  }
-  #sending .sendingMsg h2 {
-    margin: auto;
-    width: 50%;
-    font-size: 1em;
-  }
-  #sending .sendingMsg .sendingButton {
-    width: 100%;
-  }
-  #sending .sendingImg {
-    width: 50%;
-  }
-  #sending .sendingImg img {
-    padding: 0.7em;
-  }
-}
 #footCt {
   position: relative;
   width: 100%;
@@ -577,6 +409,174 @@
   color: #615959;
 }
 
+@media (max-width: 768px) {
+  #container {
+    width: 100vw;
+    padding: 0 0.5em;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  #headerBar {
+    width: 100vw;
+    left: 0;
+    padding: 0 1em;
+  }
+  #headerBar .menuNavBar {
+    display: flex;
+    align-items: center;
+  }
+  #headerBar .menuNavBar .navBar {
+    width: 100%;
+    position: absolute;
+    top: -33vh;
+    left: 0;
+    flex-direction: column;
+    background-color: white;
+  }
+  #headerBar .menuNavBar .navBar li {
+    text-align: center;
+    padding: 1em;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 1em;
+    border-bottom: 1px solid black;
+  }
+  #headerBar .menuNavBar .burgerDisplay {
+    display: block;
+  }
+  #headerBar .menuNavBar i {
+    margin-left: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  #main #landing1 {
+    flex-direction: column;
+  }
+  #main #landing1 .xmasTreeImg {
+    width: 70%;
+  }
+  #main #landing1 .landingMsg {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  #main #landing1 .landingMsg h1 {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  #main #landing1 .landingMsg p {
+    width: 80%;
+    font-size: 0.7rem;
+  }
+  #main #landing2 h2 {
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #main #landing2 .cardContainer {
+    grid-template-columns: 40% 40%;
+  }
+  #main #landing2 .cardContainer .givinCard img {
+    width: 50%;
+  }
+  #main #landing2 .cardContainer .givinCard h3 {
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+  #main #landing2 .cardContainer .givinCard p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 768px) {
+  #celebration {
+    flex-direction: column;
+    width: 95%;
+  }
+  #celebration h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #celebration .celebrateMsg {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+  }
+  #celebration .celebrateMsg p {
+    font-size: 0.7rem;
+  }
+  #celebration .celebrateMsg .homeButton a {
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+  #celebration .celebrateImg {
+    width: 55%;
+  }
+}
+@media (max-width: 768px) {
+  #gift h2 {
+    font-size: 1rem;
+  }
+  #gift .cardCt {
+    grid-template-columns: 40% 40%;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  #gift .cardCt .itemCard i {
+    font-size: 1rem;
+  }
+  #gift .cardCt .itemCard img {
+    width: 60%;
+  }
+  #gift .cardCt .itemCard h3 {
+    font-size: 0.9rem;
+  }
+  #gift .cardCt .itemCard p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 768px) {
+  #new h2 {
+    font-size: 1rem;
+  }
+  #new .newItemCt {
+    margin-top: 2rem;
+    padding: 0 4em;
+    overflow: scroll;
+  }
+  #new .newItemCt .itemCard {
+    width: 100%;
+    margin: 0 0.8em;
+  }
+  #new .newItemCt .itemCard img {
+    width: 50vw;
+  }
+}
+@media (max-width: 768px) {
+  #sending {
+    flex-direction: column;
+    text-align: center;
+  }
+  #sending .sendingMsg {
+    width: 100%;
+  }
+  #sending .sendingMsg h2 {
+    margin: auto;
+    width: 50%;
+    font-size: 1em;
+  }
+  #sending .sendingMsg .sendingButton {
+    width: 100%;
+  }
+  #sending .sendingImg {
+    width: 50%;
+  }
+  #sending .sendingImg img {
+    padding: 0.7em;
+  }
+}
 @media (max-width: 768px) {
   #footCt {
     height: fit-content;

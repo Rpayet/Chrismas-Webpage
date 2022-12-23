@@ -1,0 +1,54 @@
+@mixin gift {
+    //SECTION GIFT
+
+#gift {
+    @include sectionType1;
+    
+    h2{
+        text-align: center;
+    }
+
+    .cardCt {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 20% 20%;
+        gap: 2.5rem;
+        margin-top: 5rem;
+
+
+        .itemCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            padding: 2em 1em;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 15px #00000025;
+            
+            i{
+                color: $xmasRed;
+                position: absolute;
+                font-size: 1.5rem;
+                top: 1rem;
+                right: 1rem;
+            }
+            
+            img {
+                width: calc(25vw / 4);
+                margin: auto;
+            }
+            
+            h3 {
+                margin-top: 1em;
+            }
+
+            p {
+                margin-top: .35em
+            }
+    
+        }
+    }
+}
+
+}

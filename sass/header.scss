@@ -1,0 +1,58 @@
+@mixin header {
+    // HEADER logo + navbar
+
+
+#headerBar {
+    width: 60vw;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: #ffffffdf;
+    backdrop-filter: blur(.3em);
+
+    
+
+    .logoCt {
+        display: flex;
+        width: 15em;
+        align-items: center;
+
+        p {
+            font-weight: 600;
+        }
+
+        .xmasLogo {
+            width: 2em;
+            height: 2em;
+        }
+        
+    }
+
+    .menuNavBar{
+        display: flex;
+        align-items: center;
+
+        .navBar {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-left: 2.5em;
+                display: inline-block;
+            }
+        }
+
+        .burgerDisplay {
+            display: none;
+        }
+
+        i {
+            margin-left: 2.5em;
+        }
+    }
+}
+
+}

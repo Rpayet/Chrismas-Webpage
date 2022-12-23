@@ -1,0 +1,289 @@
+@mixin responsive {
+
+    //CONTAINER GLOBAL
+    @media (max-width: 768px) {
+
+        #container {
+            width: 100vw;
+            padding: 0 .5em;
+            overflow: hidden;
+            
+        }
+    }
+    
+
+    //HEADER NAVBAR
+    @media (max-width: 768px)  {
+    
+        #headerBar {
+            width: 100vw;
+            left: 0;
+            padding: 0 1em;
+            .menuNavBar{
+                display: flex;
+                align-items: center;
+        
+                .navBar {
+                    width: 100%;
+                    position: absolute;
+                    top: -33vh;
+                    left: 0;
+                    flex-direction: column;
+                    background-color: white;
+    
+                    li {
+                        text-align: center;
+                        padding: 1em;
+                        width: 90%;
+                        margin-left: 0;
+                        margin-top: 1em;
+                        border-bottom: 1px solid black;
+                    }
+    
+                }
+        
+                .burgerDisplay {
+                    display: block;
+                }
+    
+                i {
+                    margin-left: 1.5em;
+                }
+            }
+        
+        }
+        
+    }
+    
+
+
+
+    // HOME LANDING
+    @media (max-width: 768px)  {
+        #main {
+            #landing1 {
+                flex-direction: column;
+
+                .xmasTreeImg {
+                    width: 70%;
+                }
+
+                .landingMsg {
+                    width: 100%;
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 0;
+
+                    h1 {
+                        width: 50%;
+                        font-size: 1.5rem;
+                    }
+
+                    p{
+                        width: 80%;
+                        font-size: .7rem
+                    }
+                }
+
+            }
+
+            #landing2 {
+
+                h2 {
+                    width: 60%;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+
+                .cardContainer {
+                    grid-template-columns: 40% 40%;
+
+                    .givinCard {
+
+                        img {
+                            width: 50%;
+                        }
+                        
+                        h3 {
+                            font-size: .75rem;
+                            font-weight: 800;
+                        }
+
+                        p {
+                            font-size: .6rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    // CELEBRATION
+    @media (max-width: 768px) {
+        #celebration {
+            flex-direction: column;
+            width: 95%;
+
+            h2 {
+                font-size: 1rem;
+                text-align: center;
+
+            }
+
+            .celebrateMsg {
+                text-align: center;
+                margin-left: 0;
+                width: 100%;
+                align-items: center;
+
+                p {
+                    font-size: .7rem;
+                }
+
+                .homeButton {
+
+                    a {
+                        font-size: .7rem;
+                        font-weight: 800;
+                    }
+                }
+            }
+
+            .celebrateImg {
+                width: 55%;
+            }
+        }
+    }
+
+
+    // GIFT
+    @media (max-width: 768px) {
+
+        #gift {
+                h2 {
+                    font-size: 1rem;        
+            }
+            .cardCt {
+                grid-template-columns: 40% 40%;
+                gap: 1rem;
+                margin-top: 2rem;
+
+                .itemCard {
+                    i {
+                        font-size: 1rem;
+                    }
+                    img {
+                        width: 60%;
+                    }
+                    h3 {
+                        font-size: .9rem;
+                    }
+                    p{
+                        font-size: .7rem;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    // NEW
+
+    @media (max-width: 768px) {
+
+        #new {
+            h2 {
+                font-size: 1rem; 
+            }
+            .newItemCt {
+                margin-top: 2rem;
+                padding: 0 4em;
+                overflow: scroll;
+                .itemCard {
+                    width: 100%;
+                    margin: 0 .8em;
+                    img {
+                        width: 50vw;
+                    }
+                }
+            }
+        }       
+    }
+
+    // SENDING
+
+    @media (max-width: 768px) {
+
+        #sending {
+            flex-direction: column;
+            text-align: center;
+    
+            .sendingMsg {
+                width: 100%;
+    
+                h2 {
+                    margin: auto;
+                    width: 50%;
+                    font-size: 1em;
+                }
+    
+                .sendingButton {
+                    width: 100%;
+                }
+            }
+    
+            .sendingImg {
+                width: 50%;
+    
+                img {
+                    padding: .7em;
+                }
+            }
+        }
+    
+    }
+    
+    // FOOTER
+    @media (max-width: 768px) {
+
+        #footCt {
+            height: fit-content;
+    
+            .footBg {
+                overflow: hidden;
+    
+                .fBg1 {
+                    width: 20%;
+                    left: 70%;
+                    background-size: 100%;
+                }
+    
+                .fBg2 {
+                    width: 20%;
+                    right: -2.5em;
+                    bottom: -10em;
+                }
+            }
+    
+            .footCardCt {
+                grid-template-columns: 50%;
+                gap: 1em;
+                
+                .footCard {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+    
+
+
+
+
+
+
+
+}
