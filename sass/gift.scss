@@ -3,18 +3,14 @@
 
 #gift {
     margin-top: 5em;
+    text-align: center;
     
-    h2{
-        text-align: center;
-    }
-
     .cardCt {
         display: grid;
         justify-content: center;
         grid-template-columns: 20% 20% 20%;
         gap: 2.5rem;
         margin-top: 5rem;
-
 
         .itemCard {
             @include card;
@@ -33,14 +29,6 @@
             img {
                 width: calc(25vw / 4);
                 margin: auto;
-            }
-            
-            h3 {
-                margin-top: 1em;
-            }
-
-            p {
-                margin-top: .35em
             }
     
         }

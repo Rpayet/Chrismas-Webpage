@@ -23,14 +23,7 @@
                 justify-content: center;
                 width: 35%;
                 margin-left: 2rem;
-                h1{
-                    font-size: 2rem;
-                    font-weight: 700;
-                }
-                p {
-                    font-size: .9rem;
-                    margin-top: 1em;
-                }
+
                 .homeButton {
                     @include button;
                     background-color: $xmasRed;
@@ -63,11 +56,6 @@
                         margin: auto;
                     }
 
-                    p {
-                        width: 100%;
-                        margin-top: .8em;
-                        font-size: .8em
-                    }
                 }
             }
         }

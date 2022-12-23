@@ -74,26 +74,11 @@
                     text-align: center;
                     margin-left: 0;
 
-                    h1 {
-                        width: 50%;
-                        font-size: 1.5rem;
-                    }
-
-                    p{
-                        width: 80%;
-                        font-size: .7rem
-                    }
                 }
 
             }
 
             #landing2 {
-
-                h2 {
-                    width: 60%;
-                    font-size: 1rem;
-                    font-weight: 700;
-                }
 
                 .cardContainer {
                     grid-template-columns: 40% 40%;
@@ -103,15 +88,7 @@
                         img {
                             width: 50%;
                         }
-                        
-                        h3 {
-                            font-size: .75rem;
-                            font-weight: 800;
-                        }
-
-                        p {
-                            font-size: .6rem;
-                        }
+                
                     }
 
                 }
@@ -126,21 +103,11 @@
             flex-direction: column;
             width: 95%;
 
-            h2 {
-                font-size: 1rem;
-                text-align: center;
-
-            }
-
             .celebrateMsg {
                 text-align: center;
                 margin-left: 0;
                 width: 100%;
                 align-items: center;
-
-                p {
-                    font-size: .7rem;
-                }
 
                 .homeButton {
 
@@ -162,9 +129,7 @@
     @media (max-width: 768px) {
 
         #gift {
-                h2 {
-                    font-size: 1rem;        
-            }
+
             .cardCt {
                 grid-template-columns: 40% 40%;
                 gap: 1rem;
@@ -176,12 +141,6 @@
                     }
                     img {
                         width: 60%;
-                    }
-                    h3 {
-                        font-size: .9rem;
-                    }
-                    p{
-                        font-size: .7rem;
                     }
                 }
 
@@ -195,9 +154,6 @@
     @media (max-width: 768px) {
 
         #new {
-            h2 {
-                font-size: 1rem; 
-            }
             .newItemCt {
                 margin-top: 2rem;
                 padding: 0 4em;
@@ -224,11 +180,6 @@
             .sendingMsg {
                 width: 100%;
     
-                h2 {
-                    margin: auto;
-                    width: 50%;
-                    font-size: 1em;
-                }
     
                 .sendingButton {
                     width: 100%;
@@ -279,11 +230,6 @@
         }
     }
     
-
-
-
-
-
 
 
 }

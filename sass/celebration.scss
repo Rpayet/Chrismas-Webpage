@@ -10,11 +10,7 @@
             justify-content: center;
             width: 35%;
             margin-left: 2rem;
-        
-            p {
-                font-size: .9rem;
-                margin-top: 1em;
-            }
+    
             .homeButton {
                 @include button;
                 background-color: $xmasRed;

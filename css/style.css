@@ -1,4 +1,10 @@
 @import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet"> ');
+#container {
+  position: relative;
+  width: 60vw;
+  margin: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +16,43 @@
   color: #282525;
 }
 
-#container {
-  position: relative;
-  width: 60vw;
-  margin: auto;
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  margin-top: 1em;
+}
+
+p {
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+a {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
 #headerBar {
   width: 60vw;
   height: 8vh;
@@ -31,9 +68,6 @@
   display: flex;
   width: 15em;
   align-items: center;
-}
-#headerBar .logoCt p {
-  font-weight: 600;
 }
 #headerBar .logoCt .xmasLogo {
   width: 2em;
@@ -91,14 +125,6 @@
   width: 35%;
   margin-left: 2rem;
 }
-#main #landing1 .landingMsg h1 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-#main #landing1 .landingMsg p {
-  font-size: 0.9rem;
-  margin-top: 1em;
-}
 #main #landing1 .landingMsg .homeButton {
   width: fit-content;
   display: flex;
@@ -142,11 +168,6 @@
   width: 8.3333333333vw;
   margin: auto;
 }
-#main #landing2 .cardContainer .givinCard p {
-  width: 100%;
-  margin-top: 0.8em;
-  font-size: 0.8em;
-}
 
 #celebration {
   position: relative;
@@ -163,10 +184,6 @@
   justify-content: center;
   width: 35%;
   margin-left: 2rem;
-}
-#celebration .celebrateMsg p {
-  font-size: 0.9rem;
-  margin-top: 1em;
 }
 #celebration .celebrateMsg .homeButton {
   width: fit-content;
@@ -190,8 +207,6 @@
 
 #gift {
   margin-top: 5em;
-}
-#gift h2 {
   text-align: center;
 }
 #gift .cardCt {
@@ -221,12 +236,6 @@
 #gift .cardCt .itemCard img {
   width: 6.25vw;
   margin: auto;
-}
-#gift .cardCt .itemCard h3 {
-  margin-top: 1em;
-}
-#gift .cardCt .itemCard p {
-  margin-top: 0.35em;
 }
 
 #new {
@@ -317,7 +326,6 @@
   padding: 1em;
 }
 #sending .sendingMsg h2 {
-  font-size: 2.5em;
   color: white;
 }
 #sending .sendingMsg input {
@@ -339,7 +347,6 @@
 }
 #sending .sendingMsg .sendingButton a {
   color: white;
-  font-weight: bold;
 }
 #sending .sendingImg {
   width: 45%;
@@ -395,10 +402,6 @@
 #footCt .footCardCt .footCard .logoCt .xmasLogo {
   width: 1.5em;
   height: 1.5em;
-}
-#footCt .footCardCt .footCard p {
-  margin-top: 0.8em;
-  font-size: 0.9em;
 }
 #footCt .footCardCt .footCard ul {
   margin-top: 0.5em;
@@ -471,31 +474,11 @@
     text-align: center;
     margin-left: 0;
   }
-  #main #landing1 .landingMsg h1 {
-    width: 50%;
-    font-size: 1.5rem;
-  }
-  #main #landing1 .landingMsg p {
-    width: 80%;
-    font-size: 0.7rem;
-  }
-  #main #landing2 h2 {
-    width: 60%;
-    font-size: 1rem;
-    font-weight: 700;
-  }
   #main #landing2 .cardContainer {
     grid-template-columns: 40% 40%;
   }
   #main #landing2 .cardContainer .givinCard img {
     width: 50%;
-  }
-  #main #landing2 .cardContainer .givinCard h3 {
-    font-size: 0.75rem;
-    font-weight: 800;
-  }
-  #main #landing2 .cardContainer .givinCard p {
-    font-size: 0.6rem;
   }
 }
 @media (max-width: 768px) {
@@ -503,18 +486,11 @@
     flex-direction: column;
     width: 95%;
   }
-  #celebration h2 {
-    font-size: 1rem;
-    text-align: center;
-  }
   #celebration .celebrateMsg {
     text-align: center;
     margin-left: 0;
     width: 100%;
     align-items: center;
-  }
-  #celebration .celebrateMsg p {
-    font-size: 0.7rem;
   }
   #celebration .celebrateMsg .homeButton a {
     font-size: 0.7rem;
@@ -525,9 +501,6 @@
   }
 }
 @media (max-width: 768px) {
-  #gift h2 {
-    font-size: 1rem;
-  }
   #gift .cardCt {
     grid-template-columns: 40% 40%;
     gap: 1rem;
@@ -539,17 +512,8 @@
   #gift .cardCt .itemCard img {
     width: 60%;
   }
-  #gift .cardCt .itemCard h3 {
-    font-size: 0.9rem;
-  }
-  #gift .cardCt .itemCard p {
-    font-size: 0.7rem;
-  }
 }
 @media (max-width: 768px) {
-  #new h2 {
-    font-size: 1rem;
-  }
   #new .newItemCt {
     margin-top: 2rem;
     padding: 0 4em;
@@ -570,11 +534,6 @@
   }
   #sending .sendingMsg {
     width: 100%;
-  }
-  #sending .sendingMsg h2 {
-    margin: auto;
-    width: 50%;
-    font-size: 1em;
   }
   #sending .sendingMsg .sendingButton {
     width: 100%;

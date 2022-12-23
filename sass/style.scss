@@ -9,12 +9,9 @@
 @import 'new';
 @import 'sending';
 @import 'responsive';
+@import 'charter';
 
-* {
-    @include reset;
-    font-family: $poppins;
-    color: $title;
-}
+
 
 // CONTAINER GLOBAL
 #container {
@@ -23,6 +20,8 @@
     margin: auto;
 }
 
+
+@include charter;
 // HEADER
 @include header;
 // SECTION HOME
