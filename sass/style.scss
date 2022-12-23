@@ -1,7 +1,9 @@
-// RESET
+// IMPORTS
+// IMPORTS
 @import 'variables';
 @import 'mixins';
 @import 'charter';
+@import 'precomp/container.scss';
 @import 'precomp/header';
 @import 'precomp/footer';
 @import 'precomp/home';
@@ -11,17 +13,12 @@
 @import 'precomp/sending';
 @import 'precomp/responsive';
 
-
-
-// CONTAINER GLOBAL
-#container {
-    position: relative;
-    width: 60vw;
-    margin: auto;
-}
-
-
+// INCLUDES
+// INCLUDES
 @include charter;
+
+// CONTAINER 
+@include container;
 // HEADER
 @include header;
 // SECTION HOME

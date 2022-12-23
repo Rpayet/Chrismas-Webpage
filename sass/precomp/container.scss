@@ -1,0 +1,25 @@
+@mixin container {
+    // CONTAINER GLOBAL
+#container {
+    position: relative;
+    width: 60vw;
+    margin: auto;
+
+    .scrollRemote {
+        position: fixed;    
+        bottom: 2em;
+        right: 2em;
+        border-radius: 25%;
+        box-shadow: .15em .15em .5em #00000055;
+        z-index: 10;
+       
+        i{
+            font-size: 2em;
+            background-color: white;
+            padding: .25em;
+            border-radius: 25%;
+            color: $xmasRed;
+        }
+    }
+}
+}

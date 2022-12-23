@@ -1,10 +1,4 @@
 @import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet"> ');
-#container {
-  position: relative;
-  width: 60vw;
-  margin: auto;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +47,27 @@ a {
     font-size: 0.7rem;
   }
 }
+#container {
+  position: relative;
+  width: 60vw;
+  margin: auto;
+}
+#container .scrollRemote {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  border-radius: 25%;
+  box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.3333333333);
+  z-index: 10;
+}
+#container .scrollRemote i {
+  font-size: 2em;
+  background-color: white;
+  padding: 0.25em;
+  border-radius: 25%;
+  color: #dc3845;
+}
+
 #headerBar {
   width: 60vw;
   height: 8vh;
@@ -426,6 +441,13 @@ a {
     width: 100vw;
     padding: 0 0.5em;
     overflow: hidden;
+  }
+  #container .scrollRemote {
+    bottom: 1em;
+    right: 1em;
+  }
+  #container .scrollRemote i {
+    font-size: 1.5em;
   }
 }
 @media (max-width: 768px) {
