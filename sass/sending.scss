@@ -3,9 +3,6 @@
     // SECTION SENDING
 #sending {
     @include sectionType1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $xmasRed;
     border-radius: 2em;
     padding: 2em 0;

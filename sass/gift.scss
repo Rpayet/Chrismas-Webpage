@@ -2,7 +2,7 @@
     //SECTION GIFT
 
 #gift {
-    @include sectionType1;
+    margin-top: 5em;
     
     h2{
         text-align: center;
@@ -17,11 +17,7 @@
 
 
         .itemCard {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            width: 100%;
+            @include card;
             padding: 2em 1em;
             border-radius: 1rem;
             box-shadow: 2px 2px 15px #00000025;

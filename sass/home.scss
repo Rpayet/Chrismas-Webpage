@@ -1,83 +1,76 @@
 @mixin home{
     // SECTION HOME
 
-#main {
-    @include sectionType1;
+    #main {
+        @include sectionType1;
+        flex-direction: column;
+        
+        
+        #landing1 {
+            @include sectionType1;
+            margin-top: 0;
     
-    #landing1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-
-        .xmasTreeImg{
-            width: 45%;
-
-            img{
-                width: 100%;
-            }
-        }
-
-        .landingMsg {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35%;
-            margin-left: 2rem;
-            h1{
-                font-size: 2rem;
-                font-weight: 700;
-            }
-            p {
-                font-size: .9rem;
-                margin-top: 1em;
-            }
-            .homeButton {
-                @include button;
-                background-color: $xmasRed;
-    
-                a {
-                    color: white;
-                    font-weight: 700;
+            .xmasTreeImg{
+                width: 45%;
+                img{
+                    width: 100%;
                 }
             }
-        }
-    }
 
-    #landing2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 5em;
-        .cardContainer {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 20% 20% 20%;
-            justify-content: space-evenly;
-            margin-top: 2em;
-    
-            .givinCard {
-                width: 100%;
+            .landingMsg {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
-                
-                img {
-                    width: calc(25vw / 3);
-                    margin: auto;
+                width: 35%;
+                margin-left: 2rem;
+                h1{
+                    font-size: 2rem;
+                    font-weight: 700;
                 }
-
                 p {
-                    width: 100%;
-                    margin-top: .8em;
-                    font-size: .8em
+                    font-size: .9rem;
+                    margin-top: 1em;
+                }
+                .homeButton {
+                    @include button;
+                    background-color: $xmasRed;
+        
+                    a {
+                        color: white;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        #landing2 {
+            @include sectionType1;
+            flex-direction: column;
+            text-align: center;
+
+            .cardContainer {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 20% 20% 20%;
+                justify-content: space-evenly;
+                margin-top: 2em;
+        
+                .givinCard {
+                    @include card;
+
+                    img {
+                        width: calc(25vw / 3);
+                        margin: auto;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin-top: .8em;
+                        font-size: .8em
+                    }
                 }
             }
         }
     }
-}
 
 }
