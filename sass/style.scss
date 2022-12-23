@@ -1,15 +1,15 @@
 // RESET
 @import 'variables';
 @import 'mixins';
-@import 'header';
-@import 'footer';
-@import 'home';
-@import 'celebration';
-@import 'gift';
-@import 'new';
-@import 'sending';
-@import 'responsive';
 @import 'charter';
+@import 'precomp/header';
+@import 'precomp/footer';
+@import 'precomp/home';
+@import 'precomp/celebration';
+@import 'precomp/gift';
+@import 'precomp/new';
+@import 'precomp/sending';
+@import 'precomp/responsive';
 
 
 
