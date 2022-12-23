@@ -16,6 +16,12 @@
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  #container {
+    width: 100vw;
+    margin: 0;
+  }
+}
 #headerBar {
   width: 60vw;
   height: 8vh;
@@ -75,6 +81,7 @@
 }
 #main #landing1 .landingMsg h1 {
   font-size: 2rem;
+  font-weight: 700;
 }
 #main #landing1 .landingMsg p {
   font-size: 0.9rem;
@@ -92,6 +99,7 @@
 }
 #main #landing1 .landingMsg .homeButton a {
   color: white;
+  font-weight: 700;
 }
 #main #landing2 {
   text-align: center;
@@ -119,6 +127,28 @@
   font-size: 0.8em;
 }
 
+@media (max-width: 768px) {
+  #main #landing1 {
+    flex-direction: column;
+  }
+  #main #landing1 .xmasTreeImg {
+    width: 70%;
+  }
+  #main #landing1 .landingMsg {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  #main #landing1 .landingMsg h1 {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  #main #landing1 .landingMsg p {
+    width: 80%;
+    font-size: 0.7rem;
+  }
+}
 #celebration {
   position: relative;
   width: 100%;
