@@ -8,31 +8,36 @@
         letter-spacing: .5px;
         text-decoration: none;
         font-family: $poppins;
-        color: $title;
     }
 
     h1 {
         font-size: 2rem;
         font-weight: 700;
+        color: $title;
 
     }
 
     h2 {
         font-size: 2.5em;
+        color: $title;
 
     }
 
     h3 {
         margin-top: 1em;
+        color: $title;
+
     }
 
     p {
         font-weight: 400;
         margin-top: 1em;
+        color: $text;
     }
 
     a {
         font-weight: bold;
+        color: $text;
     }
 
     i   {
