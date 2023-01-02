@@ -3,6 +3,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: white;
+  color: #5d5656;
+}
+body.darkMode {
+  background-color: #251819;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,28 +25,23 @@ html {
 h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #282525;
 }
 
 h2 {
   font-size: 2.5em;
-  color: #282525;
 }
 
 h3 {
   margin-top: 1em;
-  color: #282525;
 }
 
 p {
   font-weight: 400;
   margin-top: 1em;
-  color: #5d5656;
 }
 
 a {
   font-weight: bold;
-  color: #5d5656;
 }
 
 @media (max-width: 768px) {
@@ -80,15 +84,15 @@ a {
 }
 
 #headerBar {
-  width: 60vw;
+  width: 100vw;
   height: 8vh;
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8745098039);
-  backdrop-filter: blur(0.3em);
+  backdrop-filter: blur(0.5em);
 }
 #headerBar.shadow {
   box-shadow: 0px 0.1em 0.2em rgba(0, 0, 0, 0.1450980392);
@@ -105,6 +109,7 @@ a {
 #headerBar .menuNavBar {
   display: flex;
   align-items: center;
+  margin-left: 20vw;
 }
 #headerBar .menuNavBar .navBar {
   display: flex;
@@ -119,6 +124,18 @@ a {
 }
 #headerBar .menuNavBar i {
   margin-left: 2.5em;
+}
+#headerBar .menuNavBar #light {
+  display: block;
+}
+#headerBar .menuNavBar #light .active {
+  display: none;
+}
+#headerBar .menuNavBar #dark {
+  display: none;
+}
+#headerBar .menuNavBar #dark .active {
+  display: block;
 }
 
 #main {
@@ -257,7 +274,7 @@ a {
   position: relative;
   padding: 2em 1em;
   border-radius: 1rem;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
+  box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.1450980392);
   transition: 0.5s;
 }
 #gift .cardCt .itemCard i {
@@ -294,7 +311,7 @@ a {
   width: 25%;
   padding: 0.5rem 0.5rem 3rem;
   border-radius: 1rem;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
+  box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.1450980392);
   transition: 0.5s;
 }
 #new .newItemCt .itemCard i {
@@ -513,7 +530,7 @@ a {
 }
 @media (max-width: 768px) {
   #main {
-    margin-top: 15em;
+    margin-top: 5em;
   }
   #main #landing1 {
     flex-direction: column;
