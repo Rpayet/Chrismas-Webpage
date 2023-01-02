@@ -1,4 +1,8 @@
 @import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet"> ');
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,7 +60,7 @@ a {
   width: 60vw;
   margin: auto;
 }
-#container .scrollRemote {
+#container #scrollRemote {
   position: fixed;
   bottom: 2em;
   right: 2em;
@@ -64,12 +68,15 @@ a {
   box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.3333333333);
   z-index: 10;
 }
-#container .scrollRemote i {
+#container #scrollRemote i {
   font-size: 2em;
   background-color: white;
   padding: 0.25em;
   border-radius: 25%;
   color: #dc3845;
+}
+#container #scrollRemote .display {
+  display: none;
 }
 
 #headerBar {
@@ -82,6 +89,9 @@ a {
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8745098039);
   backdrop-filter: blur(0.3em);
+}
+#headerBar.shadow {
+  box-shadow: 0px 0.1em 0.2em rgba(0, 0, 0, 0.1450980392);
 }
 #headerBar .logoCt {
   display: flex;
@@ -144,7 +154,7 @@ a {
   width: 35%;
   margin-left: 2rem;
 }
-#main #landing1 .landingMsg .homeButton {
+#main #landing1 .landingMsg .redButton {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -154,7 +164,7 @@ a {
   padding: 1rem 2rem;
   background-color: #dc3845;
 }
-#main #landing1 .landingMsg .homeButton a {
+#main #landing1 .landingMsg .redButton a {
   color: white;
   font-weight: 700;
 }
@@ -182,10 +192,14 @@ a {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: 0.5s;
 }
 #main #landing2 .cardContainer .givinCard img {
   width: 8.3333333333vw;
   margin: auto;
+}
+#main #landing2 .cardContainer .givinCard:hover {
+  translate: 0 -1em;
 }
 
 #celebration {
@@ -204,7 +218,7 @@ a {
   width: 35%;
   margin-left: 2rem;
 }
-#celebration .celebrateMsg .homeButton {
+#celebration .celebrateMsg .redButton {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -214,7 +228,7 @@ a {
   padding: 1rem 2rem;
   background-color: #dc3845;
 }
-#celebration .celebrateMsg .homeButton a {
+#celebration .celebrateMsg .redButton a {
   color: white;
 }
 #celebration .celebrateImg {
@@ -244,6 +258,7 @@ a {
   padding: 2em 1em;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
+  transition: 0.5s;
 }
 #gift .cardCt .itemCard i {
   color: #dc3845;
@@ -256,6 +271,9 @@ a {
   width: 6.25vw;
   margin: auto;
 }
+#gift .cardCt .itemCard:hover {
+  translate: 0 -1em;
+}
 
 #new {
   margin-top: 5rem;
@@ -263,9 +281,11 @@ a {
 }
 #new .newItemCt {
   display: flex;
+  align-items: center;
   width: 100%;
-  margin-top: 5rem;
-  overflow: hidden;
+  height: 27em;
+  margin-top: 3rem;
+  overflow-x: hidden;
 }
 #new .newItemCt .itemCard {
   margin: 0 4em;
@@ -275,6 +295,7 @@ a {
   padding: 0.5rem 0.5rem 3rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1450980392);
+  transition: 0.5s;
 }
 #new .newItemCt .itemCard i {
   padding: 0.2em;
@@ -299,6 +320,9 @@ a {
   border-radius: 1rem 1rem 50% 50%;
   background-color: #dc3845;
   z-index: -1;
+}
+#new .newItemCt .itemCard:hover {
+  translate: 0 -1em;
 }
 #new .dotCt {
   display: flex;
@@ -353,7 +377,7 @@ a {
   margin-top: 1.5em;
   padding: 1em;
 }
-#sending .sendingMsg .sendingButton {
+#sending .sendingMsg .darkButton {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -364,7 +388,7 @@ a {
   margin-top: 1.5em;
   background-color: #282525;
 }
-#sending .sendingMsg .sendingButton a {
+#sending .sendingMsg .darkButton a {
   color: white;
 }
 #sending .sendingImg {
@@ -598,6 +622,15 @@ a {
   #footCt .footCardCt .footCard {
     margin-top: 1em;
   }
+}
+#container a:hover {
+  color: #dc3845;
+}
+#container .redButton:hover {
+  background-color: #282525 !important;
+}
+#container .darkButton:hover {
+  background-color: #5d5656 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

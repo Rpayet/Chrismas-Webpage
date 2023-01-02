@@ -12,6 +12,7 @@
 @import 'precomp/new';
 @import 'precomp/sending';
 @import 'precomp/responsive';
+@import 'precomp/hover';
 
 // INCLUDES
 // INCLUDES 
@@ -35,3 +36,6 @@
 @include footer;
 //RESPONSIVE
 @include responsive;
+// HOVER
+@include hover;
+

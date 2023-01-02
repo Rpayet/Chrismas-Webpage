@@ -17,6 +17,7 @@
             padding: 2em 1em;
             border-radius: 1rem;
             box-shadow: 2px 2px 15px #00000025;
+            transition: .5s;
             
             i{
                 color: $xmasRed;
@@ -30,8 +31,14 @@
                 width: calc(25vw / 4);
                 margin: auto;
             }
+
+            &:hover {
+                translate: 0 -1em;
+            }
     
         }
+
+        
     }
 }
 

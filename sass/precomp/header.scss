@@ -12,8 +12,10 @@
     background-color: #ffffffdf;
     backdrop-filter: blur(.3em);
 
+    &.shadow {
+        box-shadow: 0px .1em .2em #00000025;
+    }
     
-
     .logoCt {
         display: flex;
         width: 15em;

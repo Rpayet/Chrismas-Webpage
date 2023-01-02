@@ -1,0 +1,22 @@
+@mixin hover {
+    
+    #container {
+        
+        a:hover {
+            color: $xmasRed;
+        }
+    
+        .redButton:hover {
+    
+            background-color: $title !important;
+        }
+    
+        .darkButton:hover {
+    
+            background-color: $text !important;
+            
+        }
+    
+    }
+    
+}

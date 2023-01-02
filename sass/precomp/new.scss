@@ -8,9 +8,12 @@
         .newItemCt {
     
             display: flex;
+            align-items: center;
             width: 100%;
-            margin-top: 5rem;
-            overflow: hidden;
+            height: 27em;
+            margin-top: 3rem;
+            overflow-x: hidden;
+            
     
             .itemCard {
                 margin: 0 4em;
@@ -20,6 +23,7 @@
                 padding: .5rem .5rem 3rem;
                 border-radius: 1rem;
                 box-shadow: 2px 2px 15px #00000025;
+                transition: .5s; 
                 
                 i{
                     padding: .2em;
@@ -46,6 +50,10 @@
                     border-radius: 1rem 1rem 50% 50%;
                     background-color: $xmasRed;
                     z-index: -1;
+                }
+
+                &:hover {
+                    translate: 0 -1em;
                 }
         
             }

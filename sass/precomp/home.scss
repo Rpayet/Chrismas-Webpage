@@ -24,7 +24,7 @@
                 width: 35%;
                 margin-left: 2rem;
 
-                .homeButton {
+                .redButton {
                     @include button;
                     background-color: $xmasRed;
         
@@ -47,13 +47,19 @@
                 grid-template-columns: 20% 20% 20%;
                 justify-content: space-evenly;
                 margin-top: 2em;
+                
         
                 .givinCard {
                     @include card;
+                    transition: .5s;
 
                     img {
                         width: calc(25vw / 3);
                         margin: auto;
+                    }
+
+                    &:hover {
+                        translate: 0 -1em;
                     }
 
                 }
