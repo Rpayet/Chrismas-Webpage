@@ -1,11 +1,11 @@
 // VARIABLES
+// VARIABLES
 
 arrowToTop = document.querySelector('#scrollRemote');
 header = document.querySelector('#headerBar');
 toggleMode = document.querySelector('body');
 darkMode = document.querySelector('#light');
 lightMode = document.querySelector('#dark');
-
 
 // FUNCTIONS
 // FUNCTIONS
@@ -37,10 +37,13 @@ lightMode.addEventListener('click', () => {
 
 let darkModeToggle = () => {
     toggleMode.classList.add('darkMode');
-    darkMode.classList.toggle('active');
+    darkMode.classList.remove('active');
+    lightMode.classList.add('active');
+
 };
 
 let lightModeToggle = () => {
-    toggleMode.classList.toggle('darkMode');
-    lightMode.classList.toggle('active');
+    toggleMode.classList.remove('darkMode');
+    darkMode.classList.add('active');
+    lightMode.classList.remove('active');
 };

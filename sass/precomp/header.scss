@@ -1,6 +1,3 @@
-@mixin header {
-
-    // HEADER logo + navbar
 #headerBar {
     width: 100vw;
     height: 8vh;
@@ -52,22 +49,12 @@
             margin-left: 2.5em;
         }
 
-        #light {
-            display: block;
-
-            .active {
-                display: none;
-            }
-        }
-
-        #dark {
+        #light, #dark {
             display: none;
 
-            .active {
+            &.active {
                 display: block;
             }
         }
     }
-}
-
 }
